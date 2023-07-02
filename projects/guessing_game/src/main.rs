@@ -9,7 +9,6 @@ fn main() {
     loop {
         println!("Please input your guess.");
         let mut guess = String::new(); // mutable variable
-        // println!("The secret number is: {secret_number}");
         
         io::stdin()
             .read_line(&mut guess)
