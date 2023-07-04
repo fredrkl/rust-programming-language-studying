@@ -1,9 +1,9 @@
 # Studying the Rust Programming Language
 
 ![Rust Logo](https://www.rust-lang.org/static/images/rust-logo-blk.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Following the Rust Book, available at <https://doc.rust-lang.org/book/>.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Lessons learned
 
