@@ -1,11 +1,12 @@
 fn main() {
     let mut x = 5;
+    let y = 5;
     println!("The value of x is: {x}");
     x = 6;
 
     {
-        let x = x + 1;
-        println!("The value of x inner-scope is: {x}");
+        let y = y + 1;
+        println!("The value of y inner-scope is: {y}");
     }
 
     println!("The value of x is: {x}");
