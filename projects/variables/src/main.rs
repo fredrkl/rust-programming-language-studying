@@ -24,4 +24,10 @@ fn main() {
     let _y: f32 = 3.0; // f32
     println!("The value of _x is now: {_x}");
     println!("The value of _y is now: {_y}");
+
+    // Char type
+    let _c = 'z';
+    let _z = 'ℤ';
+    let _heart_eyed_cat = '😻';
+    println!("The value of _heart_eyed_cat is now: {_heart_eyed_cat}");
 }
