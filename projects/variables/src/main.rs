@@ -30,4 +30,10 @@ fn main() {
     let _z = 'ℤ';
     let _heart_eyed_cat = '😻';
     println!("The value of _heart_eyed_cat is now: {_heart_eyed_cat}");
+
+    // Tuple type
+    let _tup: (i32, f64, u8) = (500, 6.4, 1);
+    let (_x, _y, _z) = _tup;
+    println!("The value of _y is: {_y}");
+
 }
