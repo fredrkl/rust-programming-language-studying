@@ -35,5 +35,7 @@ fn main() {
     let _tup: (i32, f64, u8) = (500, 6.4, 1);
     let (_x, _y, _z) = _tup;
     println!("The value of _y is: {_y}");
+    let b = _tup.1;
+    println!("The value of second _tup is: {_tup.1}");
 
 }
