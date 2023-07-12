@@ -9,12 +9,18 @@ env:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        projects: ["functions",
+          "guessing_game",
+          "hello_cargo",
+          "hello-world",
+          "variables"]
 
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: cargo build --verbose
+      run: cargo build --manifest-path=./projects/${{ matrix.projects }} --verbose
     - name: Run tests
-      run: cargo test --verbose
+      run: cargo test --manifest-path=./projects/${{ matrix.projects }} --verbose
