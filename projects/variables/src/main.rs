@@ -39,4 +39,8 @@ fn main() {
     println!("The value of second _tup is: {b}");
     let _c = ();
 
+    // Array type. Arrays in Rust have a fixed length, like tuples.
+    let _a:[u8;5] = [1, 2, 3, 4, 5];
+    let _months = ["january", "february", "march", "april", "may", "june", "july",
+                  "august", "september", "october", "november", "december"];
 }
