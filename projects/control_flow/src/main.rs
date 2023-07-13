@@ -13,7 +13,10 @@ fn main() {
     };
 
     println!("result is {}", result);
+    inner_loop();
+}
 
+fn inner_loop() {
     let mut counter = 0;
     'counting_up: loop {
         println!("counter is {}", counter);
