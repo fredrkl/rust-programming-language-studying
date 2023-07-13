@@ -3,7 +3,7 @@ fn main() {
 
     another_function();
     another_function_with_parameter(5);
-    
+    print_labeled_measurement(5, 'm'); 
 }
 
 fn another_function(){
