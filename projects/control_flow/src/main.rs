@@ -14,6 +14,32 @@ fn main() {
 
     println!("result is {}", result);
     inner_loop();
+    count_down();
+    for_loop_demo();
+    count_down_using_for();
+}
+
+fn count_down_using_for() {
+    for number in (1..4).rev(){
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
+}
+
+fn count_down() {
+    let mut number = 3;
+    while number != 0 {
+        println!("{}!", number);
+        number -= 1;
+    }
+    println!("LIFTOFF!!!");
+}
+
+fn for_loop_demo() {
+    let a = [10, 20, 30, 40, 50];
+    for element in a {
+        println!("the value is {}", element);
+    }
 }
 
 fn inner_loop() {
