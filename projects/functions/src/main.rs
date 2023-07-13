@@ -8,6 +8,14 @@ fn main() {
     println!("The value of plus_one(5) is: {}", plus_one(5));
 }
 
+fn farenheit_to_celsius(farenheit: f64) -> f64 {
+    (farenheit - 32.0) * 5.0 / 9.0
+}
+
+fn celsius_to_farenheit(celsius: f64) -> f64 {
+    celsius * 9.0 / 5.0 + 32.0
+}
+
 fn another_function(){
     println!("Another function");
 }
