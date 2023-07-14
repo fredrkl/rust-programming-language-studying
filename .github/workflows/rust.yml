@@ -16,6 +16,7 @@ jobs:
           "guessing_game",
           "hello_cargo",
           "hello-world",
+          "ownership",
           "variables"]
 
     steps:
