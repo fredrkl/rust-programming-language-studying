@@ -17,6 +17,14 @@ fn main() {
     let x = String::from("hello");
     let x2 = takes_ownership_and_gives_back(x);
     println!("{}", x2); // This works because x is returned from the takes_ownership_and_gives_back method
+
+    let x = String::from("hello");
+    let length = calculate_length(&x);
+    println!("The length of {} is {}.", x, length);
+}
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
 }
 
 fn takes_ownership_and_gives_back(some_string: String) -> String {
