@@ -21,6 +21,25 @@ fn main() {
     let x = String::from("hello");
     let length = calculate_length(&x);
     println!("The length of {} is {}.", x, length);
+
+    let mut s = String::from("hello");
+    change(&mut s);
+    println!("{}", s);
+
+    // Have multiple mutable references to the same data is not allowed
+    let mut s = String::from("hello");
+    {
+        let r2 = &mut s;
+        println!("{}", r2);
+    } // r1 goes out of scope here, so we can make a new reference with no problems.
+    
+    let r1 = &mut s;
+    println!("{}", r1);
+
+}
+
+fn change(some_string: &mut String) {
+    some_string.push_str(", world!");
 }
 
 fn calculate_length(s: &String) -> usize {
