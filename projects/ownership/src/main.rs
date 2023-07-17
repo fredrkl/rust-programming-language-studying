@@ -44,6 +44,13 @@ fn main() {
     let word = first_word(&my_string);
     println!("{}", word);
 
+    arrary_slices_demo();
+}
+
+fn arrary_slices_demo() {
+    let a = [1, 2, 3, 4, 5];
+    let slice = &a[1..3];
+    println!("{:?}", slice);
 }
 
 fn first_word(s: &str) -> &str {
