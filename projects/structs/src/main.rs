@@ -15,6 +15,15 @@ fn main() {
     let shorthand_person = build_user_2(String::from("the_email@email.no"),
                                         String::from("the_username"));
     println!("shorthand person: {}", shorthand_person.email);
+
+    let person3 = User {
+        email: String::from("another"),
+        ..another_person
+    };
+    println!("person3 email: {}", person3.email);
+    println!("person3 username: {}", person3.username);
+    println!("person3 active: {}", person3.active);
+    println!("person3 sign_in_count: {}", person3.sign_in_count);
 }
 
 fn build_user_2(email: String, username: String) -> User {
