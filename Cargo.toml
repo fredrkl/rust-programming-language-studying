@@ -2,5 +2,6 @@
 
 members = [
     "projects/guessing_game",
-    "projects/ownership"
+    "projects/ownership",
+    "projects/structs",
 ]

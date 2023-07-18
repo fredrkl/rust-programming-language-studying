@@ -17,7 +17,8 @@ jobs:
           "hello_cargo",
           "hello-world",
           "ownership",
-          "variables"]
+          "variables",
+          "structs"]
 
     steps:
     - uses: actions/checkout@v3
