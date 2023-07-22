@@ -24,7 +24,15 @@ fn main() {
     println!("person3 username: {}", person3.username);
     println!("person3 active: {}", person3.active);
     println!("person3 sign_in_count: {}", person3.sign_in_count);
+
+    let black = Color(0, 0, 0);
+    let origin = Point(0, 0, 0);
+    println!("black: {}, {}, {}", black.0, black.1, black.2);
+    println!("point: {}, {}, {}", origin.0, origin.1, origin.2);
 }
+
+struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
 
 fn build_user_2(email: String, username: String) -> User {
     User {
