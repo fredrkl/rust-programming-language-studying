@@ -29,10 +29,20 @@ fn main() {
     let origin = Point(0, 0, 0);
     println!("black: {}, {}, {}", black.0, black.1, black.2);
     println!("point: {}, {}, {}", origin.0, origin.1, origin.2);
+
+    let subnect = AlwaysEqual;
+    let something = String::from("something");
+    string_demo(&something);
+    println!("something: {}", something);
 }
 
 struct Color(i32, i32, i32);
 struct Point(i32, i32, i32);
+
+fn string_demo(astring: &str){
+    println!("{}", astring);
+
+}
 
 fn build_user_2(email: String, username: String) -> User {
     User {
@@ -52,6 +62,7 @@ fn build_user(email: String, username: String) -> User {
     }
 }
 
+struct AlwaysEqual;
 // How is the ownership of a struct's data determined?
 struct User {
     username: String,
