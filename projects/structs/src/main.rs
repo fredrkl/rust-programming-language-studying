@@ -55,8 +55,8 @@ fn build_user_2(email: String, username: String) -> User {
 
 fn build_user(email: String, username: String) -> User {
     User {
-        email: email,
-        username: username,
+        email,
+        username,
         active: true,
         sign_in_count: 1,
     }
