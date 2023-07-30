@@ -18,7 +18,8 @@ jobs:
           "hello-world",
           "ownership",
           "variables",
-          "structs"]
+          "structs",
+          "rectangles"]
 
     steps:
     - uses: actions/checkout@v3
