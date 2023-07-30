@@ -30,7 +30,7 @@ fn main() {
     println!("black: {}, {}, {}", black.0, black.1, black.2);
     println!("point: {}, {}, {}", origin.0, origin.1, origin.2);
 
-    let subnect = AlwaysEqual;
+    let _subnect = AlwaysEqual;
     let something = String::from("something");
     string_demo(&something);
     println!("something: {}", something);
