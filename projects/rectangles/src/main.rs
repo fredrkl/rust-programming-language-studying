@@ -13,6 +13,10 @@ impl Rectangle {
     fn width(&self) -> bool {
         self.width > 0
     }
+
+    fn can_hold(&self, other: &Rectangle) -> bool {
+        self.width > other.width && self.height > other.height
+    }
 }
 
 fn main() {
@@ -21,11 +25,16 @@ fn main() {
         width: dbg!(30 * scale),
         height: 50,
     };
+    let rect2 = Rectangle {
+        width: dbg!(20 * scale),
+        height: 40,
+    };
 
     dbg!(&rect1);
     //println!("rect1 is {:#?}", rect1);
     println!("The area of the rectangle is {} square pixels.", rect1.area());
     println!("The width of the rectangle is larger than 0 {}: ", rect1.width());
+    println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
 }
 
 /*
