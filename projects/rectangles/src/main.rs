@@ -6,6 +6,13 @@ struct Rectangle {
 
 // Implementing the area method on the Rectangle struct
 impl Rectangle {
+    fn square(size: u32) -> Self {
+        Self {
+            width: size,
+            height: size,
+        }
+    }
+
     fn area(&self) -> u32 {
         self.width * self.height
     }
@@ -17,6 +24,12 @@ impl Rectangle {
     fn can_hold(&self, other: &Rectangle) -> bool {
         self.width > other.width && self.height > other.height
     }
+}
+
+impl Rectangle {
+    fn height(&self) -> u32 {
+        self.height
+    } 
 }
 
 fn main() {
@@ -35,6 +48,8 @@ fn main() {
     println!("The area of the rectangle is {} square pixels.", rect1.area());
     println!("The width of the rectangle is larger than 0 {}: ", rect1.width());
     println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
+    println!("Square: {:#?}", Rectangle::square(10));
+    println!("Height: {}", rect1.height());
 }
 
 /*
