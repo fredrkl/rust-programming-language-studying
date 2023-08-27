@@ -5,4 +5,5 @@ members = [
     "projects/ownership",
     "projects/structs",
     "projects/rectangles",
+    "projects/enum-pattern-matching",
 ]
