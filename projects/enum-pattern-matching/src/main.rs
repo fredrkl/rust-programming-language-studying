@@ -25,7 +25,10 @@ enum Coin {
 
 fn value_in_cents(coin: Coin) -> u8 {
     match coin {
-        Coin::Penny => 1,
+        Coin::Penny => {
+            println!("Lucky penny!");
+            1
+        },
         Coin::Nickel => 5,
         Coin::Dime => 10,
         Coin::Quarter => 25
@@ -42,4 +45,6 @@ fn main() {
 
     _somethingelse.call();
     // Rust uses :: instead of . to access the enum variants and differentiate it from field access or method calls.
+    let _money = Coin::Penny;
+    value_in_cents(_money);
 }
