@@ -45,6 +45,13 @@ fn value_in_cents(coin: Coin) -> u8 {
     }
 }
 
+fn plus_one(x: Option<i32>) -> Option<i32>{
+    match x {
+        None => None,
+        Some(value) => Some(value + 1),
+    }
+}
+
 fn main() {
     let _home = IpAddr::V4(127,0,0,1);
     let _loopback = IpAddr::V6(String::from("::1"));
@@ -58,4 +65,8 @@ fn main() {
     let _money = Coin::Penny;
     value_in_cents(_money);
     value_in_cents(Coin::Quarter(UsState::Alabama));
+    let _five = Some(5);
+    println!("The value of five is {:?}", _five);
+    let _none = plus_one(None);
+    println!("The value of none is {:?}", _none);
 }
