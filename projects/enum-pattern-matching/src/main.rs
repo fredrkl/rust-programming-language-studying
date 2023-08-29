@@ -57,4 +57,5 @@ fn main() {
     // Rust uses :: instead of . to access the enum variants and differentiate it from field access or method calls.
     let _money = Coin::Penny;
     value_in_cents(_money);
+    value_in_cents(Coin::Quarter(UsState::Alabama));
 }
