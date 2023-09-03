@@ -52,6 +52,15 @@ fn plus_one(x: Option<i32>) -> Option<i32>{
     }
 }
 
+fn rest_of_it() {
+    let dice = 7;
+    match dice {
+        3 => println!("You rolled a 3!"),
+        7 => println!("You rolled a 7!"),
+        _ => println!("You rolled something else!"),
+    }
+}
+
 fn main() {
     let _home = IpAddr::V4(127,0,0,1);
     let _loopback = IpAddr::V6(String::from("::1"));
@@ -69,4 +78,5 @@ fn main() {
     println!("The value of five is {:?}", _five);
     let _none = plus_one(None);
     println!("The value of none is {:?}", _none);
+    rest_of_it();
 }
