@@ -7,7 +7,8 @@
 				"rust-lang.rust-analyzer"
 			]
 		}
-	}
+	},
+	"postCreateCommand": "cargo install cargo-watch"
 	// "features": {},
 	// "forwardPorts": [],
 }

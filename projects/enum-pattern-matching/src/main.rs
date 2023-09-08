@@ -79,4 +79,9 @@ fn main() {
     let _none = plus_one(None);
     println!("The value of none is {:?}", _none);
     rest_of_it();
+
+    let config_max = Some(3u8);
+    if let Some(max) = config_max {
+        println!("Max is configured to be {}", max);
+    }
 }

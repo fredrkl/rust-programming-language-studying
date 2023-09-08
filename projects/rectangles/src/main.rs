@@ -50,6 +50,9 @@ fn main() {
     println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
     println!("Square: {:#?}", Rectangle::square(10));
     println!("Height: {}", rect1.height());
+
+    let config_max = Some(3u8);
+
 }
 
 /*
