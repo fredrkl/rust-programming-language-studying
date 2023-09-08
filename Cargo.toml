@@ -6,4 +6,5 @@ members = [
     "projects/structs",
     "projects/rectangles",
     "projects/enum-pattern-matching",
+    "projects/my-project",
 ]
