@@ -19,7 +19,8 @@ jobs:
           "ownership",
           "variables",
           "structs",
-          "rectangles"]
+          "rectangles",
+          "enum-pattern-matching"]
 
     steps:
     - uses: actions/checkout@v3
