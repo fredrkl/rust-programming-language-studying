@@ -20,7 +20,9 @@ jobs:
           "variables",
           "structs",
           "rectangles",
-          "enum-pattern-matching"]
+          "enum-pattern-matching",
+          "backyard",
+          "my-project"]
 
     steps:
     - uses: actions/checkout@v3
