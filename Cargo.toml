@@ -8,4 +8,5 @@ members = [
     "projects/enum-pattern-matching",
     "projects/my-project",
     "projects/backyard",
+    "projects/restaurant",
 ]

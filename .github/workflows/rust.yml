@@ -22,7 +22,8 @@ jobs:
           "rectangles",
           "enum-pattern-matching",
           "backyard",
-          "my-project"]
+          "my-project",
+          "restaurant"]
 
     steps:
     - uses: actions/checkout@v4
