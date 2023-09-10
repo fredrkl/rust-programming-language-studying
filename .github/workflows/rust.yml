@@ -25,7 +25,7 @@ jobs:
           "my-project"]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Build
       run: cargo build --manifest-path=./projects/${{ matrix.projects }}/Cargo.toml --verbose
     - name: Run tests
