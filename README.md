@@ -4,6 +4,8 @@
 
 Following the Rust Book, available at <https://doc.rust-lang.org/book/>.
 
+There is also a Microsoft Learn course available at <https://learn.microsoft.com/en-us/training/modules/rust-introduction/1-introduction>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Lessons learned
