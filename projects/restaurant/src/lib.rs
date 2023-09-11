@@ -1,3 +1,8 @@
+// Showcasing modules, paths and use
+use std::cmp::Ordering; // use std::io and std::cmp::Ordering
+use std::io::{self, Write}; // use std::io and std::io::Write
+use std::collections::*; // use all public items defined in a path
+
 pub mod front_of_house {
     pub mod hosting {
         pub fn add_to_waitlist() {}
@@ -39,6 +44,8 @@ mod back_of_house {
 
 fn deliver_order() {}
 
+pub use crate::front_of_house::hosting; // Absolute path
+
 pub fn eat_at_resturant(){
     let mut meal = back_of_house::Breakfast::summer("Rye");
     meal.toast = String::from("Wheat");
@@ -47,6 +54,7 @@ pub fn eat_at_resturant(){
     let order1 = back_of_house::Appetizer::Salad;
     let order2 = back_of_house::Appetizer::Soup;
 
+    let _something = hosting::add_to_waitlist(); // Relative path
 
     crate::front_of_house::hosting::add_to_waitlist(); // Absolute path
     front_of_house::hosting::add_to_waitlist(); // Relative path
