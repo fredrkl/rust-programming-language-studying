@@ -3,17 +3,9 @@ use std::cmp::Ordering; // use std::io and std::cmp::Ordering
 use std::io::{self, Write}; // use std::io and std::io::Write
 use std::collections::*; // use all public items defined in a path
 
-pub mod front_of_house {
-    pub mod hosting {
-        pub fn add_to_waitlist() {}
-        fn seat_at_table() {}
-    }
-    mod serving {
-        fn take_order() {}
-        fn serve_order() {}
-        fn take_payment() {}
-    }
-}
+mod front_of_house;
+
+pub use crate::front_of_house::hosting; // Absolute path
 
 mod back_of_house {
     pub enum Appetizer {
@@ -43,8 +35,6 @@ mod back_of_house {
 }
 
 fn deliver_order() {}
-
-pub use crate::front_of_house::hosting; // Absolute path
 
 pub fn eat_at_resturant(){
     let mut meal = back_of_house::Breakfast::summer("Rye");
