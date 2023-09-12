@@ -9,4 +9,5 @@ members = [
     "projects/my-project",
     "projects/backyard",
     "projects/restaurant",
+    "projects/collections",
 ]
