@@ -31,6 +31,22 @@ fn main() {
     }
 
     for i in &v {
-        println!("{i}")
+        println!("{i}");
     }
+
+    enum SpreadsheetCell {
+        Int(i32),
+        Float(f64),
+        Text(String),
+    }
+
+    let row = vec![SpreadsheetCell::Int(3), SpreadsheetCell::Text(String::from("blue")), SpreadsheetCell::Float(10.12)];
+    for i in &row {
+        match i {
+            SpreadsheetCell::Text(i) => println!("{i}"),
+            SpreadsheetCell::Float(i) => println!("{i}"),
+            SpreadsheetCell::Int(i) => println!("{i}")
+        }
+    }
+
 }
