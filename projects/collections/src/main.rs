@@ -49,4 +49,12 @@ fn main() {
         }
     }
 
+    let s = String::new();
+    let _reference = &s;
+    let data = "initial contents";
+    let mut _s = data.to_string();
+    let s2 = "initial contents";
+    _s.push_str(s2);
+    println!("{s2}");
+
 }
