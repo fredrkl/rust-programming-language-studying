@@ -57,4 +57,20 @@ fn main() {
     _s.push_str(s2);
     println!("{s2}");
 
+    let s1 = String::from("tic");
+    let s2 = String::from("tac");
+    let s3 = String::from("toe");
+
+    let s = s1 + "-" + &s2 + "-" + &s3;
+    println!("{s}");
+
+    // When operating on strings do not use indexing because it is not guaranteed to work with all languages as excepted
+    // This is the proper way to do it
+    for c in "Зд".chars() {
+        println!("{c}");
+    }
+
+    for b in "Зд".bytes() {
+        println!("{b}");
+    }
 }
