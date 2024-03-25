@@ -8,6 +8,10 @@ There is also a Microsoft Learn course available at <https://learn.microsoft.com
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
+## Setup
+
+Follow the instructions at <https://www.rust-lang.org/tools/install> to install Rust.
+
 ## Lessons learned
 
 ### Setup
