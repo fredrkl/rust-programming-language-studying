@@ -1,13 +1,15 @@
 [workspace]
 
 members = [
+    "projects/backyard",
+    "projects/collections",
+    "projects/control_flow",
+    "projects/enum-pattern-matching",
+    "projects/functions",
     "projects/guessing_game",
     "projects/ownership",
     "projects/structs",
     "projects/rectangles",
-    "projects/enum-pattern-matching",
     "projects/my-project",
-    "projects/backyard",
     "projects/restaurant",
-    "projects/collections",
 ]
