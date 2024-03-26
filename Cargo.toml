@@ -7,9 +7,9 @@ members = [
     "projects/enum-pattern-matching",
     "projects/functions",
     "projects/guessing_game",
-    "projects/ownership",
-    "projects/structs",
-    "projects/rectangles",
     "projects/my-project",
+    "projects/ownership",
+    "projects/rectangles",
+    "projects/structs",
     "projects/restaurant",
 ]
