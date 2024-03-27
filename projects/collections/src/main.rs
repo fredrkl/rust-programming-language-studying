@@ -3,6 +3,7 @@ fn main() {
 
     let _v: Vec<i32> = Vec::new();
     let _w = vec![1, 2, 3];
+    let _something: Vec<bool> = Vec::new();
 
     let mut v = Vec::new();
     v.push(5);
@@ -17,8 +18,8 @@ fn main() {
 
     let third = v.get(2); // The reson why this is option is because it might not exist, the index might be out of bounds
     match third {
-        Some(third) => println!("The third element is {}", third),
-        None => println!("There is no third element"),
+       Some(third) => println!("The third element is {}", third),
+       None => println!("There is no third element"),
     }
 
     for i in &v {
@@ -27,11 +28,7 @@ fn main() {
 
     let mut v = vec![100, 32, 57];
     for i in &mut v {
-        *i += 50; // Dereference i to get the value it refers to, then add 50 to that value
-    }
-
-    for i in &v {
-        println!("{i}");
+        *i += 50;
     }
 
     enum SpreadsheetCell {
@@ -49,14 +46,12 @@ fn main() {
         }
     }
 
-    let s = String::new();
-    let _reference = &s;
     let data = "initial contents";
-    let mut _s = data.to_string();
     let s2 = "initial contents";
-    _s.push_str(s2);
-    println!("{s2}");
 
+    let mut _s = data.to_string();
+    _s.push_str(s2);
+    println!("{_s}");
     let s1 = String::from("tic");
     let s2 = String::from("tac");
     let s3 = String::from("toe");
