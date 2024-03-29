@@ -15,4 +15,27 @@ fn main() {
     scores.entry(String::from("Red")).or_insert(75);
 
     println!("{:?}", scores);
+
+    let text = "hello world wonderful world";
+    let mut map = HashMap::new();
+
+    for word in text.split_whitespace() {
+        let count = map.entry(word).or_insert(0);
+        *count += 1;
+    }
+    println!("{:?}", map);
+
+    let mut _numberlist = [9, 3, 1, 4, 2, 6, 5, 7, 8, 0];
+    _numberlist.sort();
+
+    if _numberlist.len() % 2 == 0 {
+        let _mid = _numberlist.len() / 2;
+        let _median = (_numberlist[_mid] + _numberlist[_mid - 1]) / 2;
+        println!("Median: {}", _median);
+    } else {
+        let _mid = _numberlist.len() / 2;
+        let _median = _numberlist[_mid];
+        println!("Median: {}", _median);
+    }
+    println!("{:?}", _numberlist);
 }
