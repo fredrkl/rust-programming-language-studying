@@ -11,9 +11,5 @@ fn main() {
 
     scores.insert(String::from("Blue"), 25);
 
-    for (key, value) in &scores {
-        println!("{key}: {value}");
-    }
-
     println!("{:?}", scores);
 }
