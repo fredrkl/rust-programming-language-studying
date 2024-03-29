@@ -10,6 +10,9 @@ fn main() {
     let _score = scores.get(&team_name).copied().unwrap_or(0);
 
     scores.insert(String::from("Blue"), 25);
+    scores.entry(String::from("Blue")).or_insert(50);
+    scores.entry(String::from("Red")).or_insert(50);
+    scores.entry(String::from("Red")).or_insert(75);
 
     println!("{:?}", scores);
 }
