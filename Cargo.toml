@@ -14,5 +14,5 @@ members = [
     "projects/rectangles",
     "projects/structs",
     "projects/restaurant",
-    "projects/hash-map",
+    "projects/hash-map", "projects/panic",
 ]
