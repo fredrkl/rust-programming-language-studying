@@ -27,13 +27,12 @@ fn main() {
 
     let mut _numberlist = [9, 3, 1, 4, 2, 6, 5, 7, 8, 0];
     _numberlist.sort();
+    let _mid = _numberlist.len() / 2;
 
     if _numberlist.len() % 2 == 0 {
-        let _mid = _numberlist.len() / 2;
         let _median = (_numberlist[_mid] + _numberlist[_mid - 1]) / 2;
         println!("Median: {}", _median);
     } else {
-        let _mid = _numberlist.len() / 2;
         let _median = _numberlist[_mid];
         println!("Median: {}", _median);
     }
